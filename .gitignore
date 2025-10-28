@@ -1,0 +1,9 @@
+# Random
+.DS_Store
+
+# Extensions
+*.fits
+*.png
+
+# Specific files
+main_query.py
