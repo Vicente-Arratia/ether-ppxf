@@ -48,7 +48,7 @@ sample = 'bigw2m'
 sources_list = glob.glob(f'/home/ether/ether-ppxf/out/main_query/spectra/{sample}/*.fits')
 
 if os.path.exists(f'/home/ether/ether-ppxf/out/fitting_pipeline/{sample}/results.csv') == False:
-    pd.DataFrame(columns = ['ONAME', 'RA', 'DEC', 'ppxf_fit']).to_csv(f'/home/ether/ether-ppxf/out/fitting_pipeline/{sample}/results.csv', index = False)
+    pd.DataFrame(columns = ['ONAME', 'RA', 'DEC', f'PPXF{sample.upper()}']).to_csv(f'/home/ether/ether-ppxf/out/fitting_pipeline/{sample}/results.csv', index = False)
 
 with open(f'/home/ether/ether-ppxf/out/fitting_pipeline/{sample}/results.csv', 'a') as results:
     for index, source in enumerate(sources_list[:]):
