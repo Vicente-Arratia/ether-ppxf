@@ -4,6 +4,7 @@
 # Extensions
 *.fits
 *.png
+*.csv
 
 # Specific files
 main_query.py
